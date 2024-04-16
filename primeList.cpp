@@ -8,7 +8,7 @@ unsigned long int primes[n / 2 + 1]{2, 3}; //primos ya encontrados, para usar en
 unsigned long int primeCount = 1;          //cantidad de primos ya encontrados, para no leer basura de la memoria (starting in 0)
 void checkPrime()                          //chequear si los números son primos
 {
-    for (unsigned long int i = 5; i <= n; i = i + 2)
+    for (unsigned long int i = 5; i <= n/2; i = i + 2)
     {
         unsigned long int j = i / 2; //máximo número que puede ser divisor
         unsigned long int k = 1;     //posición actual dentro del array de primos, el primo que estamos testeando como divisor (empieza en 3 porque no contamos pares para el 2)
