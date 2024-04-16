@@ -1,8 +1,9 @@
 //encontrar todos los primos desde el 1 hasta n
 #include <iostream>
+
 #include <cstdio>
 #include <cmath>
-unsigned long const n = 100;             //n itself
+unsigned long const n = 99999;             //n itself
 unsigned long int primes[n / 2 + 1]{2, 3}; //primos ya encontrados, para usar en divisiones e imprimir al final
 unsigned long int primeCount = 1;          //cantidad de primos ya encontrados, para no leer basura de la memoria (starting in 0)
 void checkPrime()                          //chequear si los números son primos
@@ -46,9 +47,9 @@ int main()
     checkPrime();
     printCount();
     printf("%s\n", "Lista:");
-   /* for (unsigned long int i = 0; i <= primeCount; i++)
+    for (unsigned long int i = 0; i <= primeCount; i++)
     {
         printf("%u\n", primes[i]);
-    }*/
+    }
     return 0;
 }
